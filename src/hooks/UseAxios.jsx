@@ -10,7 +10,7 @@ const useAxios = (query) => {
         setLoading(true);
         setError(null); // Reset the error state before making a new request
         try {
-            const response = await axios.get(`https://api.publicapis.org/${query}`, { params });
+            const response = await axios.get(`https://proxy-api-s947.onrender.com/api/${query}`, { params });
             setResponse(response.data);
         } catch (error) {
             setError(error);
