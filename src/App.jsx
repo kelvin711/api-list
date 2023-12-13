@@ -8,7 +8,7 @@ function App() {
     const { fetchData, response, loading } = useAxios('entries');
 
     useEffect(() => {
-        fetchData({ params: { category: 'Animals' } });
+        fetchData({ category: 'Animals' });
     }, []);
 
     return (
